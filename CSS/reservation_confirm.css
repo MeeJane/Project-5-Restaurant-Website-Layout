@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+/* Wrapper */
+.res-confirmed-wrapper {
+    width: 100%;
+}
+
+/* Top Section */
+.res-confirmed-top {
+    background: #f6efe2;
+    text-align: center;
+    padding: 80px 20px;
+    letter-spacing: 1px;
+}
+
+.res-confirmed-icon {
+    width: 90px;
+    height: 90px;
+    background: #c3a76d;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.res-confirmed-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 550;
+}
+
+.res-confirmed-text {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.res-confirmed-subtext {
+    font-size: 1.5rem;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.res-confirmed-email {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Bottom Image */
+.res-confirmed-image {
+    height: 420px;
+    background: url("../images/confirm-hero.png")
+        center/cover no-repeat;
+}
+
+/* tablet */
+@media (max-width: 992px) {
+    .res-confirmed-top {
+        padding: 50px 20px;
+    }
+
+    .res-confirmed-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2.2rem;
+    }
+
+    .res-confirmed-image {
+        height: 300px;
+    }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+    .res-confirmed-title,
+    .res-confirmed-text,
+    .res-confirmed-subtext,
+    .res-confirmed-email {
+        font-size: 1.1rem;
+    }
+
+    .res-confirmed-image {
+        height: 220px;
+    }
+}
+

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/logged_in_home.css">
+    <link rel="stylesheet" href="CSS/menucard.css">
+
+
+</head>
+
+<body>
+
+    <header class="home-header">
+
+        <!-- Top Navigation -->
+        <nav class="home-nav">
+            <a href="logged_in_home.html">Home</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact us</a>
+            <a href="help.html">Help</a>
+        </nav>
+
+        <!-- Main Header -->
+        <div class="home-main">
+            <div class="home-bottom">
+
+                <!-- Logo -->
+                <div class="home-logo">
+                    <h1 class="home-title"><span>Book</span>mytable</h1>
+                    <p class="home-tagline">Never wait for your meal</p>
+                </div>
+
+                <!-- Search -->
+                <div class="home-search">
+                    <input type="text" class="home-search-input" placeholder="Search">
+                    <button class="home-search-btn">
+                        <img src="images/lens.png" alt="search">
+                    </button>
+                </div>
+
+                <div class="home-icons">
+
+                    <a href="#" class="home-icon-link" title="Notifications">
+                        <img src="images/bell.png" alt="notification" class="home-icon" width="36px" height="32px">
+                    </a>
+
+                    <a href="contact.html" class="home-icon-link" title="Support">
+                        <img src="images/cont-icon.png" alt="support" class="home-icon" width="36px" height="32px">
+                    </a>
+
+                    <a href="wishlist.html" class="home-icon-link" title="Wishlist">
+                        <img src="images/heart.png" alt="wishlist" class="home-icon" width="36px" height="32px">
+                    </a>
+
+
+                    <img src="images/Photo by Dani.png" alt="profile" class="home-profile">
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <div class="menu">
+        <div class="menu-hero-card">
+            <div class="menu-card-hero-image">
+                <img src="images/wish-hero.png" alt="Restaurant">
+                <button class="menu-favorite" onclick="toggleFavorite(this)">
+                    ♥
+                </button>
+            </div>
+
+            <div class="menu-card-content">
+                <h3 class="menu-card-title">Grant Buffet</h3>
+                <div class="menu-location">
+                    <p>Upper Ground Floor,East court,Phoenix Market City,</p>
+                    <p>Viman Nagar,Chennai..</p>
+                </div>
+
+                <p class="menu-cuisine">North Indian, Mohali, Italian, BBQ</p>
+                <p class="menu-cost">
+                    Cost for two : <span>Rs.1000</span>
+                </p>
+                <div class="menu-rating">★★★★★</div>
+
+
+            </div>
+        </div>
+        <!-- nav-bar -->
+        <div class="menu-navbar">
+            <a href="overview.html" class="menu-nav-item" style="flex: 1;">
+                Overview Restaurant
+            </a>
+
+            <a href="menucard.html" class="menu-nav-item menu-active" style="flex: 1.2;">
+                Menu Card
+            </a>
+        </div>
+        <div class="menu-title">
+            Our Menu Card
+        </div>
+        <!-- sample-navbar -->
+        <div class="menu-sample-navbar">
+            <button class="menu-sample-btn">
+                Starters
+            </button>
+
+            <button class="menu-sample-btn">
+                Main course
+            </button>
+
+            <button class="menu-sample-btn menu-sample-active">
+                Desserts
+            </button>
+
+            <button class="menu-sample-btn">
+                Beverages
+            </button>
+        </div>
+
+        <!-- menu-card-gallery -->
+        <div class="menu-card-gallery-grid">
+
+            <!-- CARD 1 -->
+            <div class="menu-card-gallery-card">
+                <div class="menu-card-gallery-image">
+                    <img src="images/wish-card.png" alt="Panno Catto">
+
+                    
+                </div>
+
+                <div class="menu-card-gallery-body">
+                    <button class="menu-card-gallery-heart" onclick="menuCardGalleryToggle(this)">♥</button>
+                    <h3 class="menu-card-gallery-title">Panno Catto</h3>
+                    <p class="menu-card-gallery-price">₹ 240</p>
+
+                    <!-- Anchor tag ONLY for first card -->
+                    <a href="wishlist.html" class="menu-card-gallery-btn">Add Item</a>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="menu-card-gallery-card">
+                <div class="menu-card-gallery-image">
+                    <img src="images/brownie.png" alt="Brownie Ice">
+                    
+                </div>
+                <div class="menu-card-gallery-body">
+                    <button class="menu-card-gallery-heart" onclick="menuCardGalleryToggle(this)">♥</button>
+                    <h3 class="menu-card-gallery-title">Brownie Ice</h3>
+                    <p class="menu-card-gallery-price">₹ 280</p>
+                    <button class="menu-card-gallery-btn">Add Item</button>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="menu-card-gallery-card">
+                <div class="menu-card-gallery-image">
+                    <img src="images/cheese_cake.png" alt="Chesse Cake">
+                    
+                </div>
+                <div class="menu-card-gallery-body">
+                     <button class="menu-card-gallery-heart" onclick="menuCardGalleryToggle(this)">♥</button>
+                    <h3 class="menu-card-gallery-title">Chesse Cake</h3>
+                    <p class="menu-card-gallery-price">₹ 280</p>
+                    <button class="menu-card-gallery-btn">Add Item</button>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="menu-card-gallery-card">
+                <div class="menu-card-gallery-image">
+                    <img src="images/apple_pie.png" alt="Apple Pie">
+                   
+                </div>
+                <div class="menu-card-gallery-body">
+                     <button class="menu-card-gallery-heart" onclick="menuCardGalleryToggle(this)">♥</button>
+                    <h3 class="menu-card-gallery-title">Apple Pie</h3>
+                    <p class="menu-card-gallery-price">₹ 240</p>
+                    <button class="menu-card-gallery-btn">Add Item</button>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="menu-card-gallery-card">
+                <div class="menu-card-gallery-image">
+                    <img src="images/gulab.png" alt="Gulab Jamun">
+                    
+                </div>
+                <div class="menu-card-gallery-body">
+                    <button class="menu-card-gallery-heart" onclick="menuCardGalleryToggle(this)">♥</button>
+                    <h3 class="menu-card-gallery-title">Gulab Jamun</h3>
+                    <p class="menu-card-gallery-price">₹ 240</p>
+                    <button class="menu-card-gallery-btn">Add Item</button>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="menu-card-gallery-card">
+                <div class="menu-card-gallery-image">
+                    <img src="images/cream.png" alt="Creme Bruele">
+                    
+                </div>
+                <div class="menu-card-gallery-body">
+                    <button class="menu-card-gallery-heart" onclick="menuCardGalleryToggle(this)">♥</button>
+                    <h3 class="menu-card-gallery-title">Creme Bruele</h3>
+                    <p class="menu-card-gallery-price">₹ 240</p>
+                    <button class="menu-card-gallery-btn">Add Item</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="home-footer">
+
+        <!-- Top Footer -->
+        <div class="home-footer-top">
+
+            <div class="home-footer-links">
+
+                <!-- Company -->
+                <div class="home-footer-col">
+                    <h4 class="home-footer-title">Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Customer Reviews</a>
+                    <a href="#">Add Your Restaurant</a>
+                </div>
+
+                <!-- Policy -->
+                <div class="home-footer-col">
+                    <h4 class="home-footer-title">Policy Info</h4>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Cookies Policy</a>
+                    <a href="#">Cancellation Policy</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+                <!-- Cities -->
+                <div class="home-footer-col">
+                    <h4 class="home-footer-title">Cities</h4>
+                    <a href="#">Chennai</a>
+                    <a href="#">Bangalore</a>
+                    <a href="#">Hyderabad</a>
+                    <a href="#">Mumbai</a>
+                </div>
+
+                <!-- Help -->
+                <div class="home-footer-col">
+                    <h4 class="home-footer-title">Help</h4>
+                    <a href="#">Booking Status</a>
+                    <a href="#">Add Restaurant</a>
+                </div>
+
+            </div>
+
+            <hr class="home-footer-divider">
+
+            <!-- City Restaurants -->
+            <div class="home-footer-cities">
+                <div class="footer-city-flex">
+                    <p>Restaurant in Chennai</p>
+                    <p>Restaurant in Pune</p>
+                </div>
+                <div class="footer-city-flex">
+                    <p>Restaurant in Bangalore</p>
+                    <p>Restaurant in Kolkata</p>
+                </div>
+                <div class="footer-city-flex">
+                    <p>Restaurant in Hyderabad</p>
+                    <p>Restaurant in Mumbai</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="home-footer-bottom">
+
+            <!-- Center content -->
+            <div class="home-footer-center">
+                <p class="home-footer-copy">
+                    © 2025 Book My Table.Co.in. All rights reserved.
+                </p>
+
+                <div class="home-footer-social">
+                    <img src="images/foot-fb.png" alt="facebook">
+                    <img src="images/foot-twit.png" alt="twitter">
+                    <img src="images/foot-ig.png" alt="instagram">
+                </div>
+            </div>
+
+            <!-- Right aligned contact -->
+            <div class="home-footer-contact">
+
+                <div class="home-footer-contact-item">
+                    <img src="images/foot-ph.png" alt="phone" class="home-footer-contact-icon">
+                    <span>(123) 8940-985498</span>
+                </div>
+
+                <div class="home-footer-contact-item">
+                    <img src="images/foot-mail.png" alt="email" class="home-footer-contact-icon">
+                    <span>Info@Bookmytable.com</span>
+                </div>
+
+                <div class="home-footer-contact-item">
+                    <img src="images/foot-loc.png" alt="location" class="home-footer-contact-icon">
+                    <span>Chennai 54375387</span>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function toggleFavorite(button) {
+            button.classList.toggle("active");
+        }
+    </script>
+
+    <script>
+        document.querySelectorAll('.menu-nav-item').forEach(item => {
+            item.addEventListener('click', function () {
+                document.querySelectorAll('.menu-nav-item')
+                    .forEach(el => el.classList.remove('menu-active'));
+                this.classList.add('menu-active');
+            });
+        });
+
+    </script>
+
+    <script>
+        function menuCardGalleryToggle(el) {
+            el.classList.toggle("active");
+        }
+
+    </script>
+</body>
+
+</html>

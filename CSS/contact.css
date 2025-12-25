@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5eadb;
+}
+
+/* Wrapper */
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Form Section */
+.contact-form-section {
+    width: 80%;
+    background: #fff;
+    border-radius: 40px;
+    margin: 40px;
+    padding: 50px;
+    margin: 40px auto;
+}
+
+/* Title */
+.contact-title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    letter-spacing: 1.9px;
+    font-weight: 600;
+}
+
+.contact-title-icon {
+    width: 32px;
+    vertical-align: middle;
+    
+}
+
+/* Grid */
+.contact-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 90px;
+    
+}
+
+/* Fields */
+.contact-field label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #c9a76a;
+    font-size: 16px;
+}
+
+.contact-textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Support */
+.contact-support {
+    margin-top: -30px;
+}
+
+.contact-support h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.contact-support p {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-icon {
+    width: 26px;
+}
+
+/* Submit */
+.contact-submit-btn {
+    margin-top: 40px;
+    background: #b89c65;
+    color: #fff;
+    border: none;
+    padding: 18px 50px;
+    border-radius: 8px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 320px;
+}
+
+/* Image Section */
+.contact-image-section {
+    width: 100vw;
+}
+
+.contact-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.submit-flex{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+/* =====================================
+   TABLET RESPONSIVE (max-width: 1024px)
+   ===================================== */
+@media (max-width: 1024px) {
+
+    /* Form Section */
+    .contact-form-section {
+        width: 90%;
+        padding: 40px;
+        border-radius: 30px;
+    }
+
+    /* Title */
+    .contact-title {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    /* Grid → reduce gap */
+    .contact-form-grid {
+        gap: 30px 40px;
+    }
+
+    /* Labels & inputs */
+    .contact-field label {
+        font-size: 18px;
+    }
+
+    .contact-input,
+    .contact-textarea {
+        font-size: 15px;
+    }
+
+    /* Support text */
+    .contact-support h3 {
+        font-size: 22px;
+    }
+
+    .contact-support p {
+        font-size: 18px;
+    }
+
+    /* Submit button */
+    .contact-submit-btn {
+        margin-left: 0;
+        margin-top: 30px;
+        font-size: 20px;
+        padding: 16px 40px;
+    }
+
+    .submit-flex {
+        justify-content: center;
+    }
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE (max-width: 768px)
+   ===================================== */
+@media (max-width: 768px) {
+
+    /* Wrapper */
+    .contact-wrapper {
+        padding: 0 10px;
+    }
+
+    /* Form Section */
+    .contact-form-section {
+        width: 100%;
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+    /* Title */
+    .contact-title {
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+    }
+
+    .contact-title-icon {
+        width: 24px;
+    }
+
+    /* Grid → single column */
+    .contact-form-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* Labels */
+    .contact-field label {
+        font-size: 16px;
+    }
+
+    /* Inputs */
+    .contact-input,
+    .contact-textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .contact-textarea {
+        height: 100px;
+    }
+
+    /* Support */
+    .contact-support {
+        margin-top: 10px;
+    }
+
+    .contact-support h3 {
+        font-size: 20px;
+    }
+
+    .contact-support p {
+        font-size: 16px;
+    }
+
+    .contact-icon {
+        width: 22px;
+    }
+
+    /* Submit */
+    .submit-flex {
+        justify-content: center;
+    }
+
+    .contact-submit-btn {
+        width: 100%;
+        margin-left: 0;
+        padding: 16px;
+        font-size: 18px;
+    }
+
+    /* Image */
+    .contact-image-section {
+        width: 100%;
+    }
+}

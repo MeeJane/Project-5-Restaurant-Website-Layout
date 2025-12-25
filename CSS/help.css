@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f6efe7;
+    width: 110vw;
+}
+
+.help-section {
+    background: #f5eadb;
+
+}
+
+/* Header */
+.help-header {
+    text-align: center;
+    padding: 40px 60px;
+}
+
+.help-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.help-desc {
+    font-size: 1.7rem;
+    line-height: 1.6;
+    text-align: left;
+    margin-left: 50px;
+}
+
+/* Image */
+.help-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+/* Bottom Info */
+.help-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+    background: #f5eadb;
+    border-top: 3px solid #b89c65;
+}
+
+/* Left */
+/* .help-info-left {
+    width: 30%;
+} */
+
+/* .home-logo{
+    margin-bottom: 40px;
+} */
+
+.help-office-title {
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+.help-address {
+    font-size: 1.7rem;
+
+    line-height: 1.6;
+}
+
+/* Center & Right */
+/* .help-info-center,
+.help-info-right {
+    margin-bottom: 30px;
+} */
+
+.help-contact-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.help-contact-block h4 {
+    
+    font-size: 1.5rem;
+    font-weight: 550;
+    letter-spacing: 0.4px;margin-bottom: 20px;
+
+}
+
+.help-info-center p,
+.help-info-right p {
+    font-size: 1.7rem;
+
+    margin-bottom: 8px;
+}
+
+/* Icons */
+.help-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.help-section p {
+    margin-left: 40px;
+
+}
+
+/* =====================================
+   TABLET RESPONSIVE (max-width: 1024px)
+   ===================================== */
+@media (max-width: 1024px) {
+
+    body {
+        width: 100%;
+    }
+
+    /* Header */
+    .help-header {
+        padding: 30px 40px;
+    }
+
+    .help-title {
+        font-size: 28px;
+    }
+
+    .help-desc {
+        font-size: 1.4rem;
+        margin-left: 20px;
+    }
+
+    /* Image */
+    .help-image img {
+        height: 300px;
+    }
+
+    /* Bottom Info */
+    .help-info {
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 40px 50px;
+    }
+
+    .help-address,
+    .help-info-center p,
+    .help-info-right p {
+        font-size: 1.4rem;
+    }
+
+    .help-contact-block h4 {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE (max-width: 768px)
+   ===================================== */
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    .help-header {
+        padding: 25px 20px;
+        text-align: center;
+    }
+
+    .help-title {
+        font-size: 24px;
+    }
+
+    .help-desc {
+        font-size: 1.2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* Image */
+    .help-image img {
+        height: 220px;
+    }
+
+    /* Bottom Info */
+    .help-info {
+        flex-direction: column;
+        padding: 30px 25px;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .help-office-title {
+        font-size: 1.3rem;
+    }
+
+    .help-address,
+    .help-info-center p,
+    .help-info-right p {
+        font-size: 1.2rem;
+    }
+
+    .help-contact-block h4 {
+        font-size: 1.2rem;
+    }
+
+    /* Icons */
+    .help-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .help-section p {
+        margin-left: 0;
+    }
+}

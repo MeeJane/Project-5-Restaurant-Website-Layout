@@ -1,0 +1,403 @@
+.wishlist-title{
+    font-size: 2rem;
+    letter-spacing: 5px;
+    /* background: #f7f3eb; */
+    padding: 20px 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.wishlist-hero-card{
+    position: relative;
+    max-width: 100%;
+    height: 415px;
+    background: #fff;
+    display: flex;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0;
+}
+.wishlist-add-more{
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+
+}
+.wishlist-favorite {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 40px;
+    background: transparent;
+    -webkit-text-stroke: 2px #B89C65;
+    /* white border */
+    user-select: none;
+
+    /* border: 2px solid #B89C65; */
+    color: transparent;
+    cursor: pointer;
+    padding: 6px 10px;
+    transition: 0.3s;
+    border: none;
+}
+
+
+
+.wishlist-card-image {
+
+    width: 45%;
+}
+
+
+.wishlist-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Favorite */
+
+.wishlist-favorite.active {
+    background: transparent;
+    color: #B89C65;
+}
+
+/* Content */
+.wishlist-card-content {
+    width: 55%;
+    padding: 50px 30px 0 30px;
+}
+
+.wishlist-card-title {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 550;
+    
+}
+
+.wishlist-location {
+    font-size: 1.3rem;
+    margin-bottom: 75px;
+    font-weight: 450;
+    letter-spacing: 1.2px;
+}
+.wishlist-location p{
+    margin-bottom: 10px;}
+
+.wishlist-divider {
+    margin: 15px 0;
+}
+
+.wishlist-cuisine {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+
+}
+.wishlist-cost{
+    font-size: 1.3rem;
+    font-weight: 400;
+
+
+}
+
+.wishlist-cost span {
+    color: #B89C65;
+    font-weight: bold;
+}
+
+.wishlist-rating {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    margin-top: 20px;
+    color: #f4f41e;
+    font-size: 24px;
+}
+
+.btn-show button{
+    padding: 15px 10px;
+    border: none;
+    color: white;
+    background-color:#B89C65 ;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 200px;
+    margin-top: -20px;
+    margin-left: 38%;
+}
+.sect-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+/* bottom section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+
+
+.wishlist-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+/* LEFT */
+.wishlist-left {
+    flex: 2;
+}
+
+.wishlist-card-bot {
+    position: relative;
+    height: 325px;
+    background: #fff;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* Image */
+.wishlist-image-bot {
+    width: 65%;
+    position: relative;
+}
+
+.wishlist-image-bot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Heart */
+
+
+/* Content */
+.wishlist-content-bot {
+    width: 55%;
+    padding: 50px;
+}
+
+.wishlist-title-bot{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 550;
+}
+
+.wishlist-location-bot,
+.wishlist-cuisine-bot {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.wishlist-price-bot {
+    font-size: 1.8rem;
+    color: #b89c65;
+    margin: 25px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+}
+
+.wishlist-add-more {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+/* RIGHT */
+.wishlist-right {
+    flex: 1;
+    text-align: right;
+    letter-spacing: 0.7px;
+}
+
+.wishlist-order-title {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    font-weight: 550;
+    text-align: center;
+    margin-left: 70px;
+
+}
+
+.wishlist-text {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    text-align: right;
+
+}
+
+.wishlist-total {
+    font-size: 1.4rem;
+    margin: 30px 0;
+    text-align: right;
+
+
+}
+
+.wishlist-total span {
+    color: #b89c65;
+    font-size: 1.4rem;
+    text-align: right;
+
+}
+
+.wishlist-reserve-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #b89c65;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: right;
+
+}
+
+
+.wishlist-favorite-bot {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 40px;
+    background: transparent;
+    -webkit-text-stroke: 2px #B89C65;
+    /* white border */
+    user-select: none;
+
+    /* border: 2px solid #B89C65; */
+    color: transparent;
+    cursor: pointer;
+    padding: 6px 10px;
+    transition: 0.3s;
+    border: none;
+}
+
+
+
+/* Favorite */
+
+.wishlist-favorite-bot.active {
+    background: transparent;
+    color: #B89C65;
+}
+
+/* tablet-view */
+@media (max-width: 992px) {
+
+    .wishlist-title {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+    }
+
+    .wishlist-wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .wishlist-left,
+    .wishlist-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wishlist-right {
+        text-align: center;
+    }
+
+    .wishlist-text,
+    .wishlist-total {
+        text-align: center;
+    }
+
+    .wishlist-card-bot {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .wishlist-image-bot,
+    .wishlist-content-bot {
+        width: 100%;
+    }
+
+    .wishlist-content-bot {
+        padding: 40px 25px;
+        text-align: center;
+    }
+
+    .wishlist-reserve-btn {
+        margin-top: 20px;
+    }
+}
+/* mobile-view */
+@media (max-width: 576px) {
+
+    .wishlist-title {
+        font-size: 1.5rem;
+        padding: 15px 20px;
+    }
+
+    .wishlist-card-title,
+    .wishlist-title-bot {
+        font-size: 1.6rem;
+    }
+
+    .wishlist-location,
+    .wishlist-cuisine,
+    .wishlist-cost,
+    .wishlist-location-bot,
+    .wishlist-cuisine-bot {
+        font-size: 1.1rem;
+    }
+
+    .wishlist-price-bot {
+        font-size: 1.5rem;
+    }
+
+    .wishlist-favorite,
+    .wishlist-favorite-bot {
+        font-size: 32px;
+    }
+
+    .wishlist-rating {
+        font-size: 20px;
+    }
+
+    .btn-show button {
+        width: 100%;
+        margin-left: 0;
+        font-size: 1.1rem;
+    }
+
+    .wishlist-order-title {
+        margin-left: 0;
+        font-size: 1.4rem;
+    }
+
+    .wishlist-text,
+    .wishlist-total {
+        font-size: 1.2rem;
+    }
+
+    .wishlist-reserve-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

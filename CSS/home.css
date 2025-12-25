@@ -1,0 +1,798 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background: #f5eadc;
+
+}
+
+/* Header */
+.home-header {
+    width: 100%;
+}
+
+/* Top Navigation */
+.home-nav {
+    background: #B89C65;
+    display: flex;
+    justify-content: space-around;
+    padding: 18px 0;
+}
+
+.home-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/* Bottom Header */
+.home-bottom {
+    background: #c8bdab;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+/* Logo */
+.home-title {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--font-family);
+}
+
+.home-title span {
+    color: #B89C65;
+}
+
+.home-tagline {
+    font-size: 15px;
+    color: #fefefe;
+}
+
+/* Search */
+.home-search {
+    display: flex;
+    align-items: center;
+    background: #f6f3ee;
+    border-radius: 40px;
+    padding: 10px 18px;
+    width: 712px;
+    height: 72px;
+}
+
+.home-search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 25px;
+    background: transparent;
+    padding-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.home-search-input::placeholder {
+    color: black;
+}
+
+.home-search-btn {
+    /* background: #fff; */
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.home-search-btn img {
+    width: 35px;
+    height: 41px;
+}
+
+/* Register Button */
+.home-register-btn {
+    background: #B89C65;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 50px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+
+.home-footer {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Top Section */
+.home-footer-top {
+    background: #B89C65;
+    padding: 50px 80px;
+    color: #fff;
+}
+
+/* Columns */
+.home-footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.home-footer-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.home-footer-col a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+/* Divider */
+.home-footer-divider {
+    margin: 40px 0;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Cities */
+.home-footer-cities {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.home-footer-cities p {
+    font-size: 1.2rem;
+}
+
+/* Bottom Section */
+.home-footer-bottom {
+    background: #2f2f2f;
+    color: #fff;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
+}
+
+/* Center content */
+.home-footer-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.home-footer-social img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Contact (Right End) */
+.home-footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.home-footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.home-footer-contact-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-city-flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+/* home */
+/* Hero section */
+.home-hero {
+    width: 100%;
+    height: 420px;
+    background-image: url("../images/home-hero.png");
+    /* replace with your image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Optional overlay for better readability */
+.home-hero-overlay {
+    width: 100%;
+    padding-left: 80px;
+}
+
+/* Hero text */
+.home-hero-text {
+    color: white;
+    font-size: 2rem;
+    margin-left: 50px;
+    letter-spacing: 6px;
+    line-height: 1.4;
+
+}
+
+/* thumb-nail */
+/* Section */
+.home-thumbnail-section {
+
+    padding: 40px 0px;
+    overflow: hidden;
+}
+
+/* Title */
+.home-thumbnail-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+/* Rail container */
+.home-thumbnail-rail {
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-thumbnail-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: home-rail-move 6s linear infinite alternate;
+}
+
+.home-thumbnail-track a{
+    text-decoration: none;
+    color: black ;
+}
+/* Card */
+.home-thumbnail-card {
+    min-width: 750px;
+    height: 450px;
+    background: transparent;
+}
+
+/* Image */
+.home-thumbnail-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* Caption */
+.home-thumbnail-card figcaption {
+    margin-top: 14px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+/* Smooth continuous movement */
+@keyframes home-rail-move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* home-work */
+/* Section */
+.home-work-section {
+
+    padding: 80px 40px;
+    text-align: center;
+}
+
+/* Title */
+.home-work-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 70px;
+    color: #222;
+}
+
+/* Steps container */
+.home-work-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Each step */
+.home-work-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Icon */
+.home-work-icon {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 30px;
+}
+
+/* Text */
+.home-work-text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000;
+}
+
+/* review */
+/* Review Hero Section */
+.home-rev-hero {
+    width: 100%;
+    height: 420px;
+    background-image: url("../images/home-rev-hero.png");
+    /* replace with your image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Optional dark overlay for readability */
+.home-rev-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title */
+.home-rev-title {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: capitalize;
+}
+
+
+/* Review Section */
+.home-review-section {
+    background: #B89C65;
+    padding: 80px 60px;
+}
+
+/* Container */
+.home-review-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Card */
+.home-review-card {
+    text-align: left;
+    color: #fff;
+    max-width: 300px;
+}
+
+/* Avatar */
+.home-review-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-left: 40px;
+}
+
+/* Name */
+.home-review-name {
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+
+/* Stars */
+.home-review-stars {
+    color: #EAF27C;
+    font-size: 1.2rem;
+
+}
+
+/* Review text */
+.home-review-text {
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+
+/* home-action */
+/* Home Action Section */
+.home-action-section {
+    display: flex;
+    width: 100%;
+    margin-bottom: -20px;
+    background: #F6ECDC;
+}
+
+/* LEFT IMAGE AREA */
+.home-action-image-box {
+    position: relative;
+    
+    overflow: hidden;
+}
+
+.home-action-image {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Overlay Content on Image */
+.home-action-overlay {
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Overlay Item */
+.home-action-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #B89C65;
+    margin-bottom: -20px;
+}
+
+/* Icon Image */
+.home-action-icon {
+    width: 26px;
+    height: 26px;
+}
+
+/* Text */
+.home-action-item p {
+    margin: 0;
+
+}
+
+/* RIGHT CONTENT AREA */
+.home-action-content {
+    width: 50%;
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title */
+.home-action-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #000;
+    margin-left: 30px;
+}
+
+/* Form Area */
+.home-action-form {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Input */
+.home-action-input {
+    width: 700px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 150px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #fffcf8;
+}
+
+.home-action-input::placeholder{
+    color: black;
+}
+
+/* Button */
+.home-action-btn {
+    background: #B89C65;
+    color: #fff;
+    border: none;
+    padding: 15px 48px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Button Hover */
+.home-action-btn:hover {
+    background: #a58a54;
+}
+
+
+.google {
+    font-weight: bold;
+    font-size: 1.4rem;
+    position: absolute;
+    top: -90px;
+    right: -20px;
+}
+
+/* =====================================
+   TABLET RESPONSIVE (max-width: 1024px)
+   ===================================== */
+@media (max-width: 1024px) {
+
+    /* NAV */
+    .home-nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .home-bottom {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .home-search {
+        width: 100%;
+        height: 60px;
+    }
+
+    .home-search-input {
+        font-size: 1.2rem;
+    }
+
+    /* HERO */
+    .home-hero {
+        height: 320px;
+    }
+
+    .home-hero-text {
+        font-size: 1.6rem;
+        letter-spacing: 4px;
+        margin-left: 0;
+    }
+
+    /* THUMBNAILS */
+    .home-thumbnail-card {
+        min-width: 520px;
+        height: auto;
+    }
+
+    .home-thumbnail-card img {
+        height: 300px;
+    }
+
+    /* WORK */
+    .home-work-steps {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    /* REVIEWS */
+    .home-review-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    /* ACTION */
+    .home-action-section {
+        flex-direction: column;
+    }
+
+    .home-action-image {
+        width: 100%;
+        height: 280px;
+    }
+
+    .home-action-content {
+        width: 100%;
+        padding: 50px 30px;
+        text-align: center;
+    }
+
+    .home-action-form {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .home-action-input {
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    /* FOOTER */
+    .home-footer-links {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .home-footer-bottom {
+        padding: 30px;
+    }
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE (max-width: 768px)
+   ===================================== */
+@media (max-width: 768px) {
+
+    /* NAV */
+    .home-nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .home-nav a {
+        font-size: 1rem;
+    }
+
+    .home-title {
+        font-size: 24px;
+    }
+
+    .home-search {
+        height: 55px;
+        padding: 8px 14px;
+    }
+
+    .home-search-input {
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    /* HERO */
+    .home-hero {
+        height: 240px;
+    }
+
+    .home-hero-overlay {
+        padding-left: 20px;
+    }
+
+    .home-hero-text {
+        font-size: 1.2rem;
+        letter-spacing: 3px;
+    }
+
+    /* THUMBNAILS */
+    .home-thumbnail-card {
+        min-width: 300px;
+    }
+
+    .home-thumbnail-card img {
+        height: 220px;
+    }
+
+    .home-thumbnail-card figcaption {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    /* WORK */
+    .home-work-title {
+        font-size: 1.6rem;
+    }
+
+    .home-work-text {
+        font-size: 1.2rem;
+    }
+
+    /* REVIEWS */
+    .home-rev-title {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+
+    .home-review-section {
+        padding: 50px 30px;
+    }
+
+    /* ACTION */
+    .home-action-overlay {
+        top: 160px;
+        left: 20px;
+    }
+
+    .home-action-title {
+        font-size: 1.6rem;
+        margin-left: 0;
+    }
+
+    .home-action-btn {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .home-footer-top {
+        padding: 40px 30px;
+    }
+
+    .home-footer-links {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .home-footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .home-footer-center {
+        position: static;
+        transform: none;
+    }
+}

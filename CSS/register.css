@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f6efe7;
+}
+
+/* Wrapper */
+.register-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 40px;
+    
+}
+
+/* Card */
+.register-card {
+    background: #fff;
+    margin-left: 100px;
+    width: 560px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* Close */
+.register-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Title */
+.register-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 500;
+
+}
+
+/* Inputs */
+.register-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+    border: 1px solid #c6a86a;
+    margin-bottom: 20px;
+
+}
+
+.register-input::placeholder {
+    color: #c6a86a;
+    padding-left: 20px;
+    font-size: 0.9rem;
+
+}
+
+/* Actions */
+.register-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.register-login-btn {
+    background: #b89c65;
+    color: #fff;
+    padding: 6px 55px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.register-forgot {
+    text-decoration: none;
+    color: #0f0f0f;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* Divider */
+.register-divider {
+    display: flex;
+    align-items: center;
+    margin: 10px 0  25px 50px;
+    max-width: 380px;
+    
+
+}
+
+.register-divider::before,
+.register-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #aaa;
+
+}
+
+.register-divider span {
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Social */
+.register-social {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #000;
+    
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.register-social img {
+    margin-top: 10px;
+    width: 32px;
+    cursor: pointer;
+}
+
+/* Footer text */
+.register-footer-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.register-create {
+    color: #b89c65;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Image */
+.register-image img {
+    width: 380px;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: 150px;
+}
+
+/* ============================
+   TABLET RESPONSIVE (≤1024px)
+   ============================ */
+@media (max-width: 1024px) {
+
+    /* Wrapper */
+    .register-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    /* Card */
+    .register-card {
+        margin-left: 0;
+        width: 100%;
+        max-width: 500px;
+        padding: 35px;
+    }
+
+    /* Title */
+    .register-title {
+        font-size: 28px;
+    }
+
+    /* Actions */
+    .register-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .register-login-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Divider */
+    .register-divider {
+        margin: 20px auto;
+    }
+
+    /* Image */
+    .register-image img {
+        width: 320px;
+        height: 520px;
+        margin-left: 0;
+    }
+}
+
+
+/* ============================
+   MOBILE RESPONSIVE (≤768px)
+   ============================ */
+@media (max-width: 768px) {
+
+    /* Wrapper */
+    .register-wrapper {
+        padding: 15px;
+    }
+
+    /* Image */
+    .register-image {
+        display: none;
+    }
+
+    /* Card */
+    .register-card {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    /* Close icon */
+    .register-close {
+        font-size: 22px;
+        top: 15px;
+        right: 15px;
+    }
+
+    /* Title */
+    .register-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    /* Inputs */
+    .register-input {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    /* Actions */
+    .register-login-btn {
+        font-size: 1.2rem;
+    }
+
+    /* Divider */
+    .register-divider span {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .register-footer-text {
+        font-size: 14px;
+    }
+}

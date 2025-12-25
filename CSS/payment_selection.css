@@ -1,0 +1,255 @@
+.payment-title-bar {
+    
+    background: #b89c65;
+    padding: 50px 0;
+    text-align: center;
+   
+}
+
+.payment-title-all {
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 550;
+
+}
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    background-color: white;
+    
+}
+
+
+/* Layout */
+.payment-wrapper {
+    display: flex;
+    height: auto;
+}
+
+.payment-image-section {
+    width: 500px;
+    height: 750px;
+    background: url("../images/payment.png") center/cover no-repeat;
+}
+
+.payment-content-section {
+    width: 65%;
+    padding: 60px;
+}
+
+/* Dropdown */
+.payment-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 60%;
+}
+
+.payment-title {
+    font-size: 1.6rem;
+    font-weight: 550;
+    
+}
+
+.payment-menu {
+    list-style: none;
+    padding: 0;
+    display: none;
+    margin-top: 15px;
+    
+}
+
+.payment-menu.show {
+    display: block;
+}
+
+.payment-item {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 25%;
+}
+
+.payment-item:hover {
+    background: #c3a76d;
+}
+
+.payment-link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* Form */
+.payment-form {
+    display: none;
+    border: 1px solid #c3a76d;
+    padding: 40px;
+    margin-top: 30px;
+    width: 120%;
+    height: 80%;
+}
+
+.payment-form-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 90px;
+}
+
+.payment-form-row div {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #c3a76d;
+    font-size: 16px;
+}
+
+/* Button */
+.payment-btn {
+    background: #c3a76d;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+/* Success */
+.payment-success {
+    display: none;
+    margin-top: 80px;
+    color: #c3a76d;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+/* ============================
+   TABLET RESPONSIVE (≤1024px)
+   ============================ */
+@media (max-width: 1024px) {
+
+    /* Layout */
+    .payment-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-image-section {
+        width: 100%;
+        height: 300px;
+    }
+
+    .payment-content-section {
+        width: 100%;
+        padding: 40px 30px;
+    }
+
+    /* Dropdown */
+    .payment-header {
+        width: 100%;
+    }
+
+    .payment-item {
+        width: 50%;
+        font-size: 18px;
+    }
+
+    /* Form */
+    .payment-form {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .payment-form-row {
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    /* Button */
+    .payment-btn {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* ============================
+   MOBILE RESPONSIVE (≤768px)
+   ============================ */
+@media (max-width: 768px) {
+
+    /* Title bar */
+    .payment-title-bar {
+        padding: 30px 10px;
+    }
+
+    .payment-title-all {
+        font-size: 1.5rem;
+    }
+
+    /* Image */
+    .payment-image-section {
+        display: none;
+    }
+
+    /* Content */
+    .payment-content-section {
+        padding: 25px 20px;
+    }
+
+    /* Dropdown */
+    .payment-title {
+        font-size: 1.3rem;
+    }
+
+    .payment-item {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Form */
+    .payment-form-row {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    /* Button */
+    .payment-btn {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    /* Success message */
+    .payment-success {
+        font-size: 24px;
+        text-align: center;
+    }
+}

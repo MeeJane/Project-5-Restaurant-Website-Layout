@@ -1,0 +1,164 @@
+.gallery-hero{
+    width: 100vw;
+}
+.gallery-hero img{
+    width: 100%;
+    height: 423px;
+    object-fit: cover;
+}
+.gallery-title-all {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    /* background: #f7f3eb; */
+    padding: 20px 40px;
+    text-align: center;
+    font-weight: 600;
+}
+.gallery-section {
+    background: #f7f3eb;
+    padding: 60px;
+    font-family: Arial, sans-serif;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gallery-card {
+    width: 450px;
+    height: 420px;
+    padding: 5px;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-6px);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.gallery-content {
+
+    text-align: center;
+}
+
+.gallery-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+   
+}
+
+.gallery-subtitle {
+    font-size: 18px;
+    color: #333;
+}
+
+
+/* =====================================
+   TABLET RESPONSIVE (max-width: 1024px)
+   ===================================== */
+@media (max-width: 1024px) {
+
+    /* Hero */
+    .gallery-hero img {
+        height: 340px;
+    }
+
+    /* Section padding */
+    .gallery-section {
+        padding: 40px;
+    }
+
+    /* Grid */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+
+    /* Card */
+    .gallery-card {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+    }
+
+    .gallery-image {
+        height: 260px;
+    }
+
+    /* Text */
+    .gallery-title {
+        font-size: 28px;
+    }
+
+    .gallery-subtitle {
+        font-size: 16px;
+    }
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE (max-width: 768px)
+   ===================================== */
+@media (max-width: 768px) {
+
+    /* Prevent overflow */
+    .gallery-hero {
+        width: 100%;
+    }
+
+    .gallery-hero img {
+        height: 220px;
+    }
+
+    /* Title */
+    .gallery-title-all {
+        font-size: 1.5rem;
+        padding: 15px 20px;
+        letter-spacing: 1px;
+    }
+
+    /* Section */
+    .gallery-section {
+        padding: 25px 20px;
+    }
+
+    /* Grid → single column */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    /* Card */
+    .gallery-card {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+    }
+
+    .gallery-image {
+        height: 220px;
+    }
+
+    /* Text */
+    .gallery-title {
+        font-size: 24px;
+    }
+
+    .gallery-subtitle {
+        font-size: 15px;
+    }
+}

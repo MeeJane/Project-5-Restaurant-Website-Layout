@@ -1,0 +1,255 @@
+.reservation-section {
+    font-family: var(--font-family);
+    background: #f7f3eb;
+    padding-bottom: 60px;
+}
+
+/* Hero */
+.reservation-hero {
+    position: relative;
+    text-align: center;
+}
+
+.reservation-hero-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.reservation-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    /* background: #f7f3eb; */
+    padding: 20px 40px;
+
+    font-weight: 700;
+}
+
+/* Card */
+.reservation-card {
+    position: relative;
+    max-width: 100%;
+    background: #fff;
+    display: flex;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-card a{
+    position: relative;
+    max-width: 100%;
+    background: #fff;
+    display: flex;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+     width: 100vw;
+    height: 300px;
+    /* object-fit: cover; */
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.reservation-card-image {
+
+    width: 50%;
+}
+
+
+.reservation-card-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Favorite */
+.reservation-favorite {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 34px;
+    background: transparent;
+    -webkit-text-stroke: 2px #B89C65;
+    /* white border */
+    user-select: none;
+
+    /* border: 2px solid #B89C65; */
+    color: transparent;
+    cursor: pointer;
+    padding: 6px 10px;
+    transition: 0.3s;
+    border: none;
+}
+
+.reservation-favorite.active {
+    background: transparent;
+    color: #B89C65;
+}
+
+/* Content */
+.reservation-card-content {
+    width: 50%;
+    padding: 30px 30px 0 30px;
+}
+
+.reservation-card-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    
+}
+
+.reservation-location {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.reservation-divider {
+    margin: 15px 0;
+}
+
+.reservation-cuisine {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+
+}
+.reservation-cost{
+    font-size: 1.3rem;
+    font-weight: 400;
+
+
+}
+
+.reservation-cost span {
+    color: #B89C65;
+    font-weight: bold;
+}
+
+.reservation-rating {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    margin-top: 20px;
+    color: #f4f41e;
+    font-size: 24px;
+}
+
+/* ============================
+   TABLET RESPONSIVE (≤1024px)
+   ============================ */
+@media (max-width: 1024px) {
+
+    /* Hero */
+    .reservation-hero-img {
+        height: 300px;
+    }
+
+    .reservation-title {
+        font-size: 1.8rem;
+        padding: 15px 30px;
+    }
+
+    /* Card */
+    .reservation-card,
+    .reservation-card a {
+        flex-direction: column;
+        height: auto;
+        margin: 30px 20px;
+    }
+
+    .reservation-card-image,
+    .reservation-card-content {
+        width: 100%;
+    }
+
+    .reservation-card-image img {
+        height: 260px;
+    }
+
+    .reservation-card-content {
+        padding: 25px;
+    }
+
+    .reservation-card-title {
+        font-size: 1.7rem;
+    }
+
+    .reservation-location,
+    .reservation-cuisine,
+    .reservation-cost {
+        font-size: 1.2rem;
+    }
+
+    /* Rating */
+    .reservation-rating {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+
+/* ============================
+   MOBILE RESPONSIVE (≤768px)
+   ============================ */
+@media (max-width: 768px) {
+
+    /* Hero */
+    .reservation-hero-img {
+        height: 220px;
+    }
+
+    .reservation-title {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        padding: 12px 20px;
+    }
+
+    /* Card */
+    .reservation-card,
+    .reservation-card a {
+        margin: 20px 10px;
+        border-radius: 8px;
+    }
+
+    .reservation-card-image img {
+        height: 200px;
+    }
+
+    .reservation-card-content {
+        padding: 20px;
+    }
+
+    .reservation-card-title {
+        font-size: 1.4rem;
+    }
+
+    .reservation-location {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    .reservation-cuisine,
+    .reservation-cost {
+        font-size: 1.1rem;
+    }
+
+    /* Favorite */
+    .reservation-favorite {
+        font-size: 26px;
+        top: 15px;
+        right: 15px;
+    }
+
+    /* Rating */
+    .reservation-rating {
+        font-size: 20px;
+        bottom: 12px;
+        right: 12px;
+    }
+}
